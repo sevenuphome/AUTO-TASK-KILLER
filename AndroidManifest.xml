@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright (C) 2010 Marc de Verdelhan (http://www.verdelhan.eu/)
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<manifest android:versionCode="7" android:versionName="2013"
+    package="com.electromedica.in.mrptaskkiller" xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <supports-screens android:anyDensity="true" android:resizeable="true" android:largeScreens="true" android:normalScreens="true" android:smallScreens="true"/>
+    <application android:icon="@drawable/icon" android:label="@string/app_name">
+        <receiver android:label="@string/app_name" android:name="com.electromedica.in.mrptaskkiller.KillerWidget">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+                <action android:name="com.droideilhan.android.widget.buttons.ButtonWidget.ACTION_WIDGET_RECEIVER"/>
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/ustk_widget_provider"/>
+        </receiver>
+        <receiver android:name=".fireonscreenlockandrelease">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF"/>
+                <action android:name="android.intent.action.SCREEN_ON"/>
+            </intent-filter>
+        </receiver>
+        
+        <activity android:name="com.google.ads.AdActivity"
+            android:configChanges="smallestScreenSize|smallestScreenSize|screenSize|uiMode|screenLayout|orientation|navigation|keyboardHidden|keyboard|touchscreen"></activity>
+         
+             
+             
+             
+               
+    
+        <activity android:name=".whatsnew" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+         </activity>
+         
+        
+         
+         </application>
+         
+        
+
+ 
+    <uses-sdk android:minSdkVersion="3"/>
+    <uses-permission android:name="android.permission.RESTART_PACKAGES"/>
+    
+    
+</manifest>

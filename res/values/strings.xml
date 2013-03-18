@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+
+<resources>
+    <string name="app_name">Auto Task Killer</string>
+    <plurals name="nb_process_tues">
+        <item quantity="one">%1$d process killed</item>
+        <item quantity="other">%1$d processes killed</item>
+    </plurals>
+     <string name="c">keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize</string>
+   
+</resources>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  android:fillViewport="true">
+  <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" android:background="#ffffff">
+ 
+        <!--  Header Starts--><LinearLayout android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@layout/header_gradient"
+    android:paddingTop="5dip"
+    android:paddingBottom="5dip">
+        <!-- Logo Start-->
+        <!-- Logo Ends -->
+
+            <LinearLayout
+                android:id="@+id/AppAds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+</LinearLayout>
+        <!--  Header Ends -->
+ 
+        <!-- Footer Start -->
+                   <!-- Place footer next to header to set z-index property to minus value -->
+        <!-- Footer Ends -->
+ 
+        <!-- Login Form -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/header"
+            android:orientation="vertical"
+            android:padding="10dip" >
+
+          <!--  Email Label -->
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="This Application Works when you wake your device , means when you press the phone power button to open your phone ,Infact when every the phone light turns on or off this application works at that particulat time"
+              android:textColor="#372c24" />
+
+          <!--  Email Label -->
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="Once you have Installed this application in your phone , please Turn Off and ON so that the application can start working "
+              android:textColor="#372c24" />
+
+          <!--  Email Label -->
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="THIS APPLICATION IS SUPPORTED ON ALL DEVICES AND ITS FREE"
+              android:textColor="#372c24" />
+
+          <!--  Password Label -->
+
+          <TextView
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:text="FOR ANY ISSUES DROP ME A MAIL AT [ANKIT.PRASAD @ ELECTROMEDICA.IN ]"
+              android:textColor="#372c24" />
+
+          <!-- Login button -->
+          <!-- Link to Registration Screen -->
+
+          <TextView
+              android:id="@+id/textView1"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@drawable/icon"
+              android:text="" />
+
+          <TextView
+              android:id="@+id/link_to_register"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginBottom="40dip"
+              android:layout_marginTop="40dip"
+              android:gravity="center"
+              android:text="YOU WILL FIND APPLICATION LIKE THE ABOVE ICON AFTER REBOOT IN WIDGETS  "
+              android:textColor="#0b84aa"
+              android:textSize="20dip" />
+ 
+</LinearLayout>
+
+  </RelativeLayout>
+
+</ScrollView>
